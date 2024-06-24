@@ -1,0 +1,7 @@
+dash
+plotly
+gunicorn
+pandas
+seaborn
+matplotlib
+matplotlib.pyplot
