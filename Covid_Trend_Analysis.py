@@ -1,10 +1,11 @@
+import os
 from dash import Dash, dcc, html, Input, Output
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objs as go
-import seaborn as sns
-import matplotlib.pyplot as plt
 from pyspark.sql import SparkSession
+
+# Set JAVA_HOME environment variable if not already set
+os.environ['JAVA_HOME'] = '/usr/lib/jvm/java-11-openjdk'
 
 # Initialize Spark session
 spark = SparkSession.builder.appName("CovidTrendAnalysis").getOrCreate()
