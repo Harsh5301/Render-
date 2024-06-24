@@ -4,4 +4,3 @@ gunicorn
 pandas
 seaborn
 matplotlib
-matplotlib.pyplot
